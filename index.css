@@ -491,7 +491,7 @@ a {
   position: absolute;
   user-select: none;
   width: fit-content;
-  bottom: 0.1rem;
+  bottom: 1rem;
   left: 0;
   right: 0;
   margin: auto;
