@@ -26,6 +26,7 @@ body {
 }
 
 main {
+  overflow: hidden;
   max-width: var(--max-width);
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -341,6 +342,7 @@ a {
   position: relative;
   padding-top: 0.5rem;
   width: 100%;
+  overflow: hidden;
 }
 
 .slider-wrapper {
@@ -482,4 +484,55 @@ a {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+/* Nav */
+.navigation {
+  position: absolute;
+  user-select: none;
+  width: fit-content;
+  bottom: 0.1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  gap: var(--gap);
+  justify-content: center;
+  z-index: 6;
+}
+
+.radios {
+  display: flex;
+  gap: var(--gap);
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: fit-content;
+  display: none;
+}
+
+.navigation label {
+  border: 2px solid var(--theme-color);
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#radio1:checked ~ .navigation .btn1 {
+  background-color: var(--theme-color);
+}
+
+#radio2:checked ~ .navigation .btn2 {
+  background-color: var(--theme-color);
+}
+
+#radio3:checked ~ .navigation .btn3 {
+  background-color: var(--theme-color);
+}
+
+#radio4:checked ~ .navigation .btn4 {
+  background-color: var(--theme-color);
 }
