@@ -587,3 +587,12 @@ a {
 .testimonial-title {
   padding-top: var(--gap);
 }
+
+/* business days */
+.business-days {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  text-align: center;
+  text-transform: capitalize;
+}
