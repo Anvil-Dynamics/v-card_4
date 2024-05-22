@@ -1,5 +1,5 @@
 // Slider move
-const slideContainer = document.getElementById("servi-slider");
+const galContainer = document.getElementById("gal-slider");
 
 function slider(container, slidesFlex, navigation) {
   let initialX,
@@ -28,10 +28,11 @@ function slider(container, slidesFlex, navigation) {
   // ******FUNCTIONS******
   function moveSlide() {
     document
-      .querySelectorAll(".rads")
+      .querySelectorAll(".radg")
       .forEach((rad) => rad.setAttribute("data-active", false));
     slidesFlex.style.left = `${leftPos * counter}%`;
-    const d = document.querySelector(`.rads[data-lab="${counter + 1}"]`);
+    const d = document.querySelector(`.radg[data-lab="${counter + 1}"]`);
+
     d.setAttribute("data-active", true);
   }
 
@@ -133,26 +134,4 @@ function slider(container, slidesFlex, navigation) {
   }
 }
 
-slider(slideContainer, slideContainer.children[1], slideContainer.children[2]);
-// Inquiry Form
-const inquiry = document.querySelector(".inq-main");
-const inqTrigger = document.querySelector(".inq-btn");
-const closeBtn = document.querySelector(".close-btn");
-
-closeBtn.addEventListener("click", toggleInquiryForm);
-inqTrigger.addEventListener("click", toggleInquiryForm);
-
-function toggleInquiryForm() {
-  inquiry.classList.toggle("visible");
-}
-
-// Share Modal
-const shareTrigger = document.querySelector(".share-icon-wrapper");
-const shareClose = document.querySelector(".modal-close");
-const modal = document.querySelector(".share-modal");
-
-shareClose.addEventListener("click", toggleShareModal);
-shareTrigger.addEventListener("click", toggleShareModal);
-function toggleShareModal() {
-  modal.classList.toggle("visible");
-}
+slider(galContainer, galContainer.children[1], galContainer.children[2]);

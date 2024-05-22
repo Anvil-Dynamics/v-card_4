@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>card 1</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -163,7 +163,7 @@
         <h2 class="section-title">our services</h2>
         <div class="container">
           <!-- Services Slider -->
-          <div class="slider">
+          <div id="servi-slider" class="slider">
             <!-- radio buttons start -->
             <div class="radios">
               <input type="radio" name="radio-btn" id="radio1" checked />
@@ -207,10 +207,9 @@
             </div>
             <!-- navigation start -->
             <div class="navigation">
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio2" class="btn2" id="2"></label>
-              <label for="radio3" class="btn3" id="3"></label>
-              <label for="radio4" class="btn4" id="4"></label>
+              <label for="radio1" class="btn1 rads" data-lab="1" id="1"></label>
+              <label for="radio2" class="btn2 rads" data-lab="2" id="2"></label>
+              <label for="radio3" class="btn3 rads" data-lab="3" id="3"></label>
             </div>
           </div>
         </div>
@@ -264,7 +263,7 @@
         <h2 class="section-title">gallery</h2>
         <div class="container">
           <!-- gallery Slider -->
-          <div class="slider">
+          <div id="gal-slider" class="slider">
             <!-- radio buttons start -->
             <div class="radios">
               <input type="radio" name="radio-btn" id="radio1" checked />
@@ -294,10 +293,8 @@
             </div>
             <!-- Navigation -->
             <div class="navigation">
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
+              <label for="radio1" class="btn1 radg" data-lab="1" id="1"></label>
+              <label for="radio1" class="btn1 radg" data-lab="2" id="1"></label>
             </div>
           </div>
         </div>
@@ -308,7 +305,7 @@
         <h2 class="section-title">products</h2>
         <div class="container">
           <!-- product Slider -->
-          <div class="slider">
+          <div id="prod-slider" class="slider">
             <!-- radio buttons start -->
             <div class="radios">
               <input type="radio" name="radio-btn" id="radio1" checked />
@@ -356,10 +353,8 @@
             </div>
             <!-- Navigation -->
             <div class="navigation">
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
+              <label for="radio1" class="btn1 radp" data-lab="1" id="1"></label>
+              <label for="radio1" class="btn1 radp" data-lab="2" id="1"></label>
             </div>
           </div>
         </div>
@@ -370,7 +365,7 @@
         <h2 class="section-title">blog</h2>
         <div class="container">
           <!-- product Slider -->
-          <div class="slider">
+          <div id="blog-slider" class="slider">
             <!-- radio buttons start -->
             <div class="radios">
               <input type="radio" name="radio-btn" id="radio1" checked />
@@ -402,10 +397,8 @@
             </div>
             <!-- Navigation -->
             <div class="navigation">
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
+              <label for="radio1" class="btn1 radb" data-lab="1" id="1"></label>
+              <label for="radio1" class="btn1 radb" data-lab="2" id="1"></label>
             </div>
           </div>
         </div>
@@ -417,7 +410,7 @@
         <h2 class="section-title">testimonials</h2>
         <div class="container">
           <!-- gallery Slider -->
-          <div class="slider">
+          <div id="testi-slider" class="slider">
             <!-- radio buttons start -->
             <div class="radios">
               <input type="radio" name="radio-btn" id="radio1" checked />
@@ -446,12 +439,10 @@
 
               <!-- Slide End -->
             </div>
-            <!-- Navigation -->
+            <!-- navigation start -->
             <div class="navigation">
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
-              <label for="radio1" class="btn1" id="1"></label>
+              <label for="radio1" class="btn1 rad" tata-lab="1" id="1"></label>
+              <label for="radio2" class="btn2 rad" tata-lab="2" id="2"></label>
             </div>
           </div>
         </div>
@@ -553,5 +544,9 @@
       </div>
     </main>
     <script src="./script.js"></script>
+    <script src="./testi-slider.js"></script>
+    <script src="./blog.js"></script>
+    <script src="./gallery.js"></script>
+    <script src="./product.js"></script>
   </body>
 </html>

@@ -596,3 +596,29 @@ a {
   text-align: center;
   text-transform: capitalize;
 }
+
+.rads[data-active="true"] {
+  background-color: var(--theme-color);
+}
+
+.rad[data-active="true"] {
+  background-color: var(--theme-color);
+}
+
+.radb[data-active="true"] {
+  background-color: var(--theme-color);
+}
+.radg[data-active="true"] {
+  background-color: var(--theme-color);
+}
+.radp[data-active="true"] {
+  background-color: var(--theme-color);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.blog {
+  z-index: 5;
+}
